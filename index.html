@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABX — Partners Trust & Love Scanning System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta property="og:image" content="https://labx-seven.vercel.app/favicon.ico" />
+    <meta name="twitter:image" content="https://labx-seven.vercel.app/favicon.ico" />
+</head>
+<body>
+    <button class="theme-toggle-btn" id="themeToggleBtn" title="Change Theme">
+        <i class="fas fa-palette"></i>
+    </button>
+    <div class="theme-selector-panel" id="themePanel">
+        <div class="theme-panel-header">
+            <h3>Select Theme</h3>
+            <button class="close-panel-btn" id="closeThemePanel">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="theme-grid">
+            <div class="theme-option" data-theme="blue">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #00d4ff, #9d4edd);"></div>
+                <span class="theme-name">Blue</span>
+            </div>
+            <div class="theme-option" data-theme="red">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #ff4757, #ff6b81);"></div>
+                <span class="theme-name">Red</span>
+            </div>
+            <div class="theme-option" data-theme="green">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #2ed573, #00b894);"></div>
+                <span class="theme-name">Green</span>
+            </div>
+            <div class="theme-option" data-theme="purple">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #9d4edd, #5a189a);"></div>
+                <span class="theme-name">Purple</span>
+            </div>
+            <div class="theme-option" data-theme="yellow">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #ffd32a, #ffa502);"></div>
+                <span class="theme-name">Yellow</span>
+            </div>
+            <div class="theme-option" data-theme="pink">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #ff2e8a, #ff6bcb);"></div>
+                <span class="theme-name">Pink</span>
+            </div>
+            <div class="theme-option" data-theme="orange">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #ff7f00, #e67700);"></div>
+                <span class="theme-name">Orange</span>
+            </div>
+            <div class="theme-option" data-theme="violet">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #8a2be2, #6a0dad);"></div>
+                <span class="theme-name">Violet</span>
+            </div>
+            <div class="theme-option" data-theme="white">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #ffffff, #f1f2f6);"></div>
+                <span class="theme-name">White</span>
+            </div>
+            <div class="theme-option" data-theme="black">
+                <div class="theme-preview" style="background: linear-gradient(135deg, #000000, #2d3436);"></div>
+                <span class="theme-name">Black</span>
+            </div>
+        </div>
+    </div>
+    <div class="preloader" id="preloader">
+        <div class="preloader-container">
+            <div class="logo-animation">
+                <div class="logo-letters">
+                    <span class="logo-letter" data-letter="L">L</span>
+                    <span class="logo-letter" data-letter="A">A</span>
+                    <span class="logo-letter" data-letter="B">B</span>
+                    <span class="logo-letter" data-letter="X">X</span>
+                </div>
+                <div class="logo-subtitle">Love Test</div>
+            </div>
+            <div class="preloader-background">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content" id="mainContent">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">L</span>
+                    <span class="logo-text">ABX</span>
+                    <span class="logo-beta">BETA</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#scan" class="nav-link active">Scan</a>
+                    <a href="#results" class="nav-link">Results</a>
+                    <a href="#history" class="nav-link">History</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Advanced Partner</span>
+                        <span class="hero-title-secondary">Trust & Love Scanning System</span>
+                    </h1>
+                    <p class="hero-description">
+                        LABX uses advanced biometric and emotional resonance technology to analyze compatibility between partners with 99.7% scientific accuracy.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">99.7%</div>
+                            <div class="stat-label">Accuracy</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">2.1M+</div>
+                            <div class="stat-label">Scans</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10s</div>
+                            <div class="stat-label">Scan Time</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-grid">
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="floating-orb orb-1"></div>
+                        <div class="floating-orb orb-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="input-section" id="scan">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Enter Partner Information</h2>
+                    <p class="section-subtitle">Provide names for both partners to initiate the biometric compatibility scan.</p>
+                </div>
+                <div class="input-grid">
+                    <div class="input-container">
+                        <label for="femaleName" class="input-label">
+                            <i class="fas fa-venus input-icon"></i>
+                            Female Partner Name
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="text" id="femaleName" class="name-input" placeholder="Enter female partner's name" maxlength="20">
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="input-validation" id="femaleValidation"></div>
+                    </div>
+                    <div class="input-container">
+                        <label for="maleName" class="input-label">
+                            <i class="fas fa-mars input-icon"></i>
+                            Male Partner Name
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="text" id="maleName" class="name-input" placeholder="Enter male partner's name" maxlength="20">
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="input-validation" id="maleValidation"></div>
+                    </div>
+                </div>
+                <div class="input-actions">
+                    <button class="btn btn-secondary" id="clearBtn">
+                        <i class="fas fa-eraser"></i>
+                        Clear
+                    </button>
+                    <button class="btn btn-primary" id="validateBtn">
+                        <i class="fas fa-check-circle"></i>
+                        Validate Names
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="scan-section">
+            <div class="section-container">
+                <div class="scan-header">
+                    <h2 class="section-title">Biometric Compatibility Scan</h2>
+                    <p class="section-subtitle">Place your thumbs on both fingerprint scanners to begin the analysis.</p>
+                </div>           
+                <div class="scan-status" id="scanStatus">
+                    <div class="status-message" id="statusMessage">
+                        <i class="fas fa-info-circle"></i>
+                        <span id="statusText">Awaiting name validation...</span>
+                    </div>
+                    <div class="status-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-text" id="progressText">0%</div>
+                    </div>
+                </div>
+                
+                <div class="fingerprint-container">
+                    <div class="fingerprint-scanner left-scanner" id="leftScanner">
+                        <div class="scanner-label">
+                            <i class="fas fa-venus"></i>
+                            <span id="leftName">Female</span>
+                        </div>
+                        <div class="scanner-overlay">
+                            <svg class="fingerprint-svg" viewBox="0 0 200 200">
+                                <path class="fingerprint-path" d="M100,50 C70,50 50,70 50,100 C50,130 70,150 100,150 C130,150 150,130 150,100 C150,70 130,50 100,50 Z M100,60 C125,60 140,75 140,100 C140,125 125,140 100,140 C75,140 60,125 60,100 C60,75 75,60 100,60 Z" />
+                                <path class="fingerprint-detail" d="M85,80 C75,85 70,95 70,105" />
+                                <path class="fingerprint-detail" d="M115,80 C125,85 130,95 130,105" />
+                                <path class="fingerprint-detail" d="M90,110 C85,120 85,130 90,140" />
+                                <path class="fingerprint-detail" d="M110,110 C115,120 115,130 110,140" />
+                            </svg>
+                            <div class="scan-line" id="leftScanLine"></div>
+                            <div class="scanner-glow"></div>
+                        </div>
+                        <div class="scanner-instruction">
+                            <i class="fas fa-hand-point-up"></i>
+                            <span id="leftInstruction">Validate names first</span>
+                        </div>
+                    </div>
+                    
+                    <div class="scan-connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-pulse"></div>
+                        <div class="connector-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="fingerprint-scanner right-scanner" id="rightScanner">
+                        <div class="scanner-label">
+                            <i class="fas fa-mars"></i>
+                            <span id="rightName">Male</span>
+                        </div>
+                        <div class="scanner-overlay">
+                            <svg class="fingerprint-svg" viewBox="0 0 200 200">
+                                <path class="fingerprint-path" d="M100,50 C70,50 50,70 50,100 C50,130 70,150 100,150 C130,150 150,130 150,100 C150,70 130,50 100,50 Z M100,60 C125,60 140,75 140,100 C140,125 125,140 100,140 C75,140 60,125 60,100 C60,75 75,60 100,60 Z" />
+                                <path class="fingerprint-detail" d="M85,80 C75,85 70,95 70,105" />
+                                <path class="fingerprint-detail" d="M115,80 C125,85 130,95 130,105" />
+                                <path class="fingerprint-detail" d="M90,110 C85,120 85,130 90,140" />
+                                <path class="fingerprint-detail" d="M110,110 C115,120 115,130 110,140" />
+                            </svg>
+                            <div class="scan-line" id="rightScanLine"></div>
+                            <div class="scanner-glow"></div>
+                        </div>
+                        <div class="scanner-instruction">
+                            <i class="fas fa-hand-point-up"></i>
+                            <span id="rightInstruction">Validate names first</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scan-controls">
+                    <button class="btn btn-outline" id="cancelScanBtn" disabled>
+                        <i class="fas fa-stop-circle"></i>
+                        Cancel Scan
+                    </button>
+                    <button class="btn btn-primary" id="startScanBtn" disabled>
+                        <i class="fas fa-play-circle"></i>
+                        Begin Analysis
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="results-section" id="results">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Compatibility Results</h2>
+                    <p class="section-subtitle">Detailed analysis of trust and love compatibility between partners.</p>
+                </div>
+                
+                <div class="results-container" id="resultsContainer">
+                    <div class="no-results" id="noResults">
+                        <div class="no-results-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="no-results-title">No Scan Results Yet</h3>
+                        <p class="no-results-description">
+                            Complete a compatibility scan to see detailed results about partner trust and love compatibility.
+                        </p>
+                    </div>
+                    
+                    <div class="results-card" id="resultsCard">
+                        <div class="results-glow-border"></div>
+                        <div class="results-header">
+                            <div class="results-title">
+                                <h3 id="resultsPairNames">Emmanuel & Wendy</h3>
+                                <div class="results-date" id="resultsDate">Today, 10:42 AM</div>
+                            </div>
+                            <div class="results-actions">
+                                <button class="icon-btn" id="copyResultsBtn" title="Copy Results">
+                                    <i class="far fa-copy"></i>
+                                </button>
+                                <button class="icon-btn" id="shareResultsBtn" title="Share Results">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="icon-btn" id="saveResultsBtn" title="Save Results">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="results-content">
+                            <div class="overall-score">
+                                <div class="score-circle">
+                                    <div class="score-value" id="overallScore">87%</div>
+                                    <div class="score-label">Overall Match</div>
+                                </div>
+                                <div class="score-description" id="scoreDescription">
+                                    Emmanuel and Wendy are an exceptionally strong match with deep emotional alignment.
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid" id="metricsGrid">
+                            </div>
+                        </div>
+                        
+                        <div class="results-insights">
+                            <h4 class="insights-title">
+                                <i class="fas fa-lightbulb"></i>
+                                Compatibility Insights
+                            </h4>
+                            <div class="insights-content" id="insightsContent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="saved-section" id="history">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Scan History</h2>
+                    <p class="section-subtitle">Previously saved compatibility scans.</p>
+                </div>
+                
+                <div class="saved-results">
+                    <div class="saved-header">
+                        <h3 class="saved-title">
+                            <i class="fas fa-history"></i>
+                            Previous Scans
+                        </h3>
+                        <button class="btn btn-text" id="clearHistoryBtn">
+                            Clear History
+                        </button>
+                    </div>
+                    <div class="saved-list" id="savedResultsList">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">About LABX Technology</h2>
+                    <p class="section-subtitle">How our advanced compatibility scanning works.</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="about-card-title">Neural Analysis</h3>
+                        <p class="about-card-description">
+                            LABX analyzes 64 neural compatibility factors to measure emotional and intellectual alignment between partners.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="about-card-title">Biometric Resonance</h3>
+                        <p class="about-card-description">
+                            Our system measures biometric resonance patterns to assess physical and emotional chemistry compatibility.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-chart-network"></i>
+                        </div>
+                        <h3 class="about-card-title">Trust Algorithms</h3>
+                        <p class="about-card-description">
+                            Advanced algorithms analyze communication patterns and trust indicators to predict relationship longevity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">L</span>
+                        <span class="logo-text">ABX</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Advanced Partner Trust & Love Scanning System
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VayLHeB6RGJLBJFZXs1e" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4 class="link-title">Product</h4>
+                        <a href="#scan" class="footer-link">Scan</a>
+                        <a href="#results" class="footer-link">Results</a>
+                        <a href="#history" class="footer-link">History</a>
+                        <a href="#about" class="footer-link">Technology</a>
+                    </div>                 
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 LABX Systems. All rights reserved. |Developed by MR.ROMANTIC with 🤍.</p>
+            </div>
+        </footer>
+    </div>
+
+    <audio id="scanSound" preload="auto" loop>
+        <source src="https://files.catbox.moe/z8clgp.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="completeSound" preload="auto">
+        <source src="https://files.catbox.moe/a3w07k.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickSound" preload="auto">
+        <source src="https://files.catbox.moe/ooluaq.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="errorSound" preload="auto">
+        <source src="https://files.catbox.moe/oeedw9.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
